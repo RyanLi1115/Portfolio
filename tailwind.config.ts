@@ -47,6 +47,7 @@ const config: Config = {
       
       // 4. 色彩系统 (Color System)
       colors: {
+        // 自定义颜色
         background: '#FFFFFF',
         'text-primary': '#111111',
         'text-secondary': '#111111',
