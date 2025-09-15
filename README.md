@@ -200,7 +200,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-For questionsss:
+For questions:
 - Email: ryanlii1115@gmail.com
 - LinkedIn: https://www.linkedin.com/in/ryan-li-5b594a361/
 - Website: Coming Soon!
