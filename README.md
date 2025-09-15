@@ -60,7 +60,6 @@ Portfolio/
 ### Typography
 - **Main Font**: Inter (clean, modern sans-serif)
 - **Display Font**: VT323 (retro pixel font for headers)
-- **Size Scale**: Caption (12px) → Helper (14px) → Body (16px) → Sub (20px) → Section (32px) → Main (40px) → Main-lg (48px)
 
 ### Colors
 - **Background**: Pure white (#FFFFFF)
@@ -68,9 +67,6 @@ Portfolio/
 - **Text Secondary**: Medium gray (#111111)
 - **Interactive**: Light gray (#999999)
 - **Borders**: Subtle gray (#EAEAEA)
-
-### Spacing
-- **xs**: 4px → **sm**: 8px → **md**: 16px → **lg**: 24px → **xl**: 32px → **2xl**: 48px
 
 ## 🚀 Getting Started
 
@@ -92,10 +88,7 @@ Portfolio/
    ```
 
 3. **Add your images** (Required)
-   Since personal images are excluded from the repository, you need to add them manually:
-   - Add `homePage.jpg` to `/public/` (your profile photo)
-   - Add `homepageExperience.png` to `/public/` (professional experience screenshot)
-   - Add `sdg.jpg` to `/public/` (SDG project image)
+   Since personal images are excluded from the repository, you need to add them manually.
 
 4. **Start the development server**
    ```bash
@@ -134,9 +127,12 @@ Interactive project showcase cards:
 - Professional experience and personal projects
 - Responsive layout (vertical on mobile, horizontal on desktop)
 
+### Wrobble Cards
+A card effect that translates and scales on mousemove, perfect for feature cards.
+
 ### Navigation Bar
 Global header with:
-- Personal branding (Ryan Yiran Li)
+- Personal branding
 - Responsive navigation menu
 - Pixel font styling for retro aesthetic
 - Smooth hover transitions
@@ -194,9 +190,9 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Ryan Yiran Li**
-- Professional Developer at UNSW Business School
+- Web Developer at UNSW Business School
 - Full-stack developer and creative problem solver
-- [LinkedIn Profile](https://www.linkedin.com/in/your-profile-url)
+- [LinkedIn Profile](https://www.linkedin.com/in/ryan-li-5b594a361/)
 
 ## 🤝 Contributing
 
@@ -204,10 +200,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-For questions or collaboration opportunities:
-- Email: [your-email@example.com]
-- LinkedIn: [Your LinkedIn Profile]
-- Website: [Your Website URL]
+For questionsss:
+- Email: ryanlii1115@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ryan-li-5b594a361/
+- Website: Coming Soon!
 
 ---
 
