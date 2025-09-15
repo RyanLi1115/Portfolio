@@ -4,11 +4,11 @@ import { PinContainer } from "@/components/ui/3d-pin";
 
 export function GalleryPins() {
   return (
-    <div id="gallery-section" className="w-full pb-2xl">
+    <div id="gallery-section" className="w-full pb-0">
       {/* 标题已移至 page.tsx */}
       
       {/* 【修改 1 & 2】增加了组件宽度和间距，解决了留白和压缩问题 */}
-      <div className="flex flex-col items-center justify-center gap-y-16 md:flex-row md:items-start md:justify-center md:gap-x-16">
+      <div className="flex flex-col items-center justify-center gap-y-4 md:flex-row md:items-start md:justify-center md:gap-x-16">
         
         {/* 第一个 Pin - 专业经历 */}
         <div className="flex h-[40rem] w-full max-w-lg items-center justify-center">
