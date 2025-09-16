@@ -32,6 +32,12 @@ public/homePage.jpg
 public/homepageExperience.png
 public/sdg.jpg
 
+# Personal data files (sensitive content)
+data/experienceData.backup.ts
+data/projectsData.backup.ts
+data/educationData.backup.ts
+app/contact/page.backup.tsx
+
 # Logs
 *.log
 

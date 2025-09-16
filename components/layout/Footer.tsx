@@ -1,12 +1,10 @@
 /**
- * Footer 组件 - 纯页脚展示
+ * Footer 组件 - 普通页脚展示
  * 
  * 职责：
  * - 显示页脚内容
  * - 提供社交媒体链接
  * - 展示技术栈信息
- * 
- * 注意：滚动控制逻辑已移至 ScrollController 组件
  */
 
 "use client";
@@ -14,7 +12,7 @@
 export default function Footer() {
   return (
     <footer 
-      className="sticky bottom-0 z-10 bg-black border-t border-gray-800 py-2xl min-h-[320px] w-full"
+      className="bg-black border-t border-gray-800 py-2xl w-full mt-2xl"
     >
       <div className="container mx-auto px-md h-full">
         <div className="flex flex-col h-full">

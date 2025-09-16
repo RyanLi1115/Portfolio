@@ -3,7 +3,6 @@ import { inter, vt323 } from '@/lib/fonts'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
-import ScrollController from '@/components/layout/ScrollController'
 
 export const metadata: Metadata = {
   title: 'Ryan Yiran Li | Software Developer',
@@ -18,9 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${vt323.variable}`}>
       <body className="bg-background font-sans text-text-primary">
-        <ScrollController />
         <Navbar />
-        <main className="relative z-20 bg-background mb-[320px]">
+        <main className="relative z-20 bg-background">
           {children}
         </main>
         <Footer />

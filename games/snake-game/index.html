@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Difficulty Selection -->
+    <div id="difficultyMenu" class="difficulty-menu">
+        <h2>Choose Difficulty</h2>
+        <div class="difficulty-buttons">
+            <button class="difficulty-btn" onclick="selectDifficulty('easy')">Easy (150ms)</button>
+            <button class="difficulty-btn" onclick="selectDifficulty('medium')">Medium (100ms)</button>
+            <button class="difficulty-btn" onclick="selectDifficulty('hard')">Hard (50ms)</button>
+        </div>
+    </div>
+
+    <canvas 
+    id = "myCanvas" 
+    width="500" 
+    height="500" 
+    style="background-color: black; display: none;"
+    ></canvas>
+
+    <!-- Game Controls -->
+    <div id="gameControls" style="display: none;">
+        <button type="button" id="Start" onclick="restartGame()">Start New Game</button>
+        <button type="button" id="changeDifficulty" onclick="showDifficultyMenu()">Change Difficulty</button>
+        <p id="myHighestScore">highest score:</p>
+        <p id="myScore">current score:</p>
+        <p id="currentDifficulty">Difficulty: Easy</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

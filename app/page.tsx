@@ -105,7 +105,7 @@ export default function HomePage() {
         <GalleryPins />
         
         {/* WobbleCard Demo Section：3D卡片组件区域 */}
-        <div className="mt-0">
+        <div className="mt-4">
           {/* WobbleCardDemo 组件：展示三个具有3D效果的卡片 */}
           <WobbleCardDemo />
         </div>
