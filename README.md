@@ -190,8 +190,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Ryan Yiran Li**
-- Web Developer at UNSW Business School
-- Full-stack developer and creative problem solver
+- Full-stack developer
 - [LinkedIn Profile](https://www.linkedin.com/in/ryan-li-5b594a361/)
 
 ## 🤝 Contributing
@@ -203,8 +202,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 For questions:
 - Email: ryanlii1115@gmail.com
 - LinkedIn: https://www.linkedin.com/in/ryan-li-5b594a361/
-- Website: Coming Soon!
+- Website: ryanli.online
 
----
-
-Built with ❤️ using Next.js and Tailwind CSS
