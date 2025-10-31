@@ -97,7 +97,7 @@ export default function HomePage() {
       */}
       <div className="container mx-auto">
         {/* 画廊标题：使用自定义字体和样式 */}
-        <h2 className="text-center font-display text-main-lg text-text-primary mt-10">
+        <h2 className="text-center font-display text-main-lg text-text-primary mt-10 font-bold">
           Gallery
         </h2>
         

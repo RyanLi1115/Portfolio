@@ -1,5 +1,5 @@
 /**
- * Projects Data - 项目数据 (示例版本)
+ * Projects Data - 项目数据
  * 
  * 包含所有项目的详细信息
  */
@@ -21,20 +21,16 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     id: "1",
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce platform with user authentication, product management, and payment integration.",
+    title: "Assertify (Lightweight TS Test Runner)",
+    description: "A test framework built from scratch with Node.js and TypeScript to understand the core principles of Jest/Vitest, focusing on test discovery, sandboxed execution, and reporting.",
     type: "web",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
-    imageUrl: "/galleryDemo1.jpg",
-    demoUrl: "https://example-ecommerce.com",
-    githubUrl: "https://github.com/example/ecommerce",
+    technologies: ["Node.js", "TypeScript", "vm module", "glob"],
+    githubUrl: "https://github.com/RyanLi1115/Assertify",
     features: [
-      "User authentication and authorization",
-      "Product catalog with search and filters",
-      "Shopping cart and checkout process",
-      "Payment integration with Stripe",
-      "Admin dashboard for product management",
-      "Responsive design for all devices"
+      "Overview: A test framework built from scratch with Node.js and TypeScript to understand the core principles of Jest/Vitest, focusing on test discovery, sandboxed execution, and reporting.",
+      "Metrics: Implemented 5 core APIs ('describe', 'it', 'expect') and 7+ common assertion matchers ('toBe', 'toEqual','toBeTruthy').",
+      "Core Implementation: Used Node.js 'vm' module for sandboxed execution contexts to prevent test contamination. Used 'fs' and 'glob' for automatic discovery and execution of '*.test.ts' files.",
+      "Async & Efficiency: Supported 'async/await' for asynchronous test cases and kept the core implementation concise (within 500 lines of code)."
     ],
     isPlayable: false
   },

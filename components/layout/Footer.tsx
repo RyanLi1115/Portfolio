@@ -29,9 +29,6 @@ export default function Footer() {
             
             {/* 右侧：技术栈描述 */}
             <div className="text-center md:text-left">
-              <p className="text-white text-subsection max-w-2xl">
-                This portfolio is built with Next.js, styled with Tailwind CSS, and animated with Framer Motion. The fonts used are: Inter and VT323.
-              </p>
             </div>
           </div>
           
@@ -40,7 +37,7 @@ export default function Footer() {
             <div className="flex space-x-lg">
               {/* LinkedIn */}
               <a 
-                href="https://www.linkedin.com/in/ryan-yiran-li-0b0b0b0b0b" 
+                href="https://linkedin.com/in/ryan-li-5b594a361" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white hover:text-blue-400 transition-all duration-300 hover:scale-110 transform cursor-pointer"
@@ -66,9 +63,7 @@ export default function Footer() {
 
               {/* Email */}
               <a 
-                href="mailto:ryan.li@example.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+                href="/contact" 
                 className="text-white hover:text-red-400 transition-all duration-300 hover:scale-110 transform cursor-pointer"
               >
                 <span className="sr-only">Email</span>

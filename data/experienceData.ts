@@ -1,5 +1,5 @@
 /**
- * Experience Data - 工作经验数据 (示例版本)
+ * Experience Data - 工作经验数据
  * 
  * 包含所有工作经验的详细信息
  */
@@ -13,52 +13,53 @@ export interface ExperienceItem {
   description: string;
   technologies: string[];
   achievements: string[];
+  url?: string;
 }
 
 export const experienceData: ExperienceItem[] = [
   {
     id: "1",
-    company: "Tech Company A",
-    position: "Software Developer",
-    location: "City, Country",
-    duration: "01/2024 - Present",
-    description: "Developed and maintained web applications using modern technologies.",
-    technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker", "PostgreSQL"],
+    company: "UNSW Business School SDG Committee",
+    position: "Software Engineer (Casual Professional)",
+    location: "Sydney, Australia",
+    duration: "Apr 2025 – Oct 2025",
+    description: "Held full-stack responsibility for designing and developing three core systems for the UN SDG knowledge platform: Authentication, Search, and Notifications.",
+    url: "https://sdg.unswzoo.com",
+    technologies: ["Django (DRF)", "React", "TypeScript", "SimpleJWT", "SMTP", "Redis", "Celery", "D3.js"],
     achievements: [
-      "Led a team of developers to deliver a customer management system",
-      "Improved application performance by 40% through code optimization",
-      "Implemented CI/CD pipeline reducing deployment time by 60%",
-      "Mentored junior developers and helped them grow their skills"
+      "Full-Stack Authentication System: Built a Django (DRF) and SimpleJWT backend API (Access 60min / Refresh 7day). Developed React (TypeScript) forms with an 'authenticated-Fetch' service for automatic 401 token refresh and retry. Integrated SMTP and Redis for email verification (5 min expiration).",
+      "Homepage Search System: Utilized DRF Filters and 'SearchFilter' for a high-performance search API. Implemented the React homepage search bar, integrating keyword suggestions, hot-words, and a D3.js word cloud.",
+      "Asynchronous Notification System: Used Celery (with Redis as Broker) to build an asynchronous notification service. Triggered SMTP email tasks on events like team invites or status changes."
     ]
   },
   {
     id: "2",
-    company: "Startup B",
-    position: "Full Stack Developer",
-    location: "City, Country",
-    duration: "06/2023 - 12/2023",
-    description: "Built full-stack applications with focus on user experience.",
-    technologies: ["Vue.js", "Express.js", "MongoDB", "Redis", "GraphQL"],
+    company: "Acronyx Technologies (Accord AI Wallpaper Generator)",
+    position: "Independent Developer & Project Lead",
+    location: "Sydney, Australia",
+    duration: "May 2025 – Present",
+    description: "Independently designed, developed, and deployed an AI wallpaper generation application. The app integrates Google Vision and Stability AI (ControlNet) to provide users with personalized HD wallpapers based on image analysis.",
+    url: "https://accordwp.com",
+    technologies: ["Node.js", "Express", "React", "TypeScript", "Firebase", "Google Vision API", "Stability AI", "ControlNet", "Redis", "Multer", "Docker", "JWT"],
     achievements: [
-      "Built a real-time chat application serving 10,000+ users",
-      "Developed RESTful APIs that handle 1M+ requests daily",
-      "Collaborated with design team to implement responsive UI components",
-      "Reduced database query time by 50% through query optimization"
+      "Full-Stack Development & AI Integration: Led Node.js (Express) backend development, integrating Google Vision and Stability AI (ControlNet) APIs to build an automated pipeline from end to end. Built the frontend with React (TypeScript), integrating Firebase (Auth/Firestore/Storage) for a complete user system.",
+      "System Design & Resource Management: Implemented resource management policies using Redis for daily quotas (3/day), Multer for file size limits (10MB) and end-to-end timeout controls (180s for Stability API). Deployed using Docker and secured with JWT."
     ]
   },
   {
     id: "3",
-    company: "Company C",
-    position: "IT Intern",
-    location: "City, Country",
-    duration: "03/2023 - 08/2023",
-    description: "Gained hands-on experience in IT operations and maintenance.",
+    company: "Jiezhen Technology",
+    position: "IT Operations and Maintenance Intern",
+    location: "Jiangsu, China",
+    duration: "03/2024 - 08/2024",
+    description: "Assisted in maintaining and optimizing server infrastructure for Jiezhen Technology.",
     technologies: ["Linux", "Docker", "MySQL", "Python", "Shell"],
     achievements: [
-      "Maintained server infrastructure and monitoring systems",
-      "Developed automated backup solutions",
-      "Implemented disaster recovery procedures",
-      "Assisted in system optimization and troubleshooting"
+      "Maintained server infrastructure ensuring 99.5% uptime during internship period",
+      "Developed automated monitoring scripts using Python that reduced manual checks by 70%",
+      "Implemented backup procedures that reduced data recovery time from hours to minutes",
+      "Assisted in system optimization tasks that improved server response time by 20%",
+      "Documented troubleshooting procedures for common server issues"
     ]
   }
 ];

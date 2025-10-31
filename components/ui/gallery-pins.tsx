@@ -43,8 +43,8 @@ export function GalleryPins() {
         <div className="flex h-[40rem] w-full max-w-lg items-center justify-center">
           <PinContainer
             // 【修改 3】更新了标题和链接
-            title="Coming Soon"
-            href="#"
+            title="https://accordwp.com"
+            href="https://accordwp.com"
           >
             <div className="flex basis-full cursor-pointer flex-col p-md tracking-tight sm:basis-1/2 w-[34rem] h-[30rem]">
               <h3 className="font-sans text-lg font-bold text-text-primary">
@@ -55,8 +55,12 @@ export function GalleryPins() {
                   Founder & Full-stack Developer
                 </span>
               </div>
-              <div className="mt-md flex flex-1 w-full items-center justify-center rounded-lg border border-border bg-border text-text-secondary aspect-video">
-                <span>Coming Soon</span>
+              <div className="mt-md flex flex-1 w-full rounded-lg border border-border bg-background aspect-video">
+                <img
+                  src="/accord.png"
+                  alt="Accord Project"
+                  className="w-full h-full rounded-lg object-cover"
+                />
               </div>
             </div>
           </PinContainer>

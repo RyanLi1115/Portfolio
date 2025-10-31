@@ -32,18 +32,12 @@ export default function ProjectsPage() {
           <h1 className="text-main-lg font-display text-text-primary mb-lg">
             My Projects
           </h1>
-          <p className="font-bold text-subsection text-text-secondary max-w-3xl mx-auto">
-            Explore my portfolio of web applications and interactive games. 
-          </p>
         </div>
       </section>
 
       {/* Web Applications Section */}
       <section className="container mx-auto px-md pb-2xl">
         <div className="mb-2xl">
-          <h2 className="text-section font-display text-text-primary mb-lg text-center">
-            Web Applications
-          </h2>
           
           <div className="space-y-8">
             {webProjects.map((project) => (

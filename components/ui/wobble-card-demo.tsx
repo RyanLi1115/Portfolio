@@ -40,10 +40,10 @@ export function WobbleCardDemo() {
             {/* 文字内容区域：相对定位，确保在图片之上 */}
             <div className="relative z-10">
               <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                No shirt, no shoes, no weapons.
+                Seeking Developer Position
               </h2>
               <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-                If someone yells "stop!", goes limp, or taps out, the fight is over.
+                Looking for opportunities to contribute to innovative software projects.
               </p>
             </div>
             {/* 背景图片：绝对定位在卡片底部，占据下半部分 */}
@@ -64,10 +64,10 @@ export function WobbleCardDemo() {
             {/* 文字内容区域 */}
             <div className="relative z-10">
               <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                Gippity AI powers the universe
+                Fast Learning Ability
               </h2>
               <p className="mt-4 text-left text-base/6 text-neutral-200">
-                With over 100,000 monthly active bot users.
+                Quick to adapt to new technologies and frameworks.
               </p>
             </div>
             {/* 背景图片 */}
@@ -89,12 +89,10 @@ export function WobbleCardDemo() {
           {/* 文字内容区域 */}
           <div className="relative z-10">
             <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-              Signup for blazing-fast cutting-edge state of the art Gippity AI
-              wrapper today!
+              Passion, Teamwork & More
             </h2>
             <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-              With over 100,000 monthly active bot users, Gippity AI is the most
-              popular AI platform for developers.
+              Dedicated to collaboration and delivering quality results with enthusiasm.
             </p>
           </div>
           {/* 背景图片 */}

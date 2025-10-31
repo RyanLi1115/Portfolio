@@ -23,9 +23,21 @@ export default function ExperienceItem({ experience }: ExperienceItemProps) {
           <h3 className="text-xl font-semibold text-text-primary mb-1">
             {experience.position}
           </h3>
-          <p className="text-lg text-text-secondary mb-1">
-            {experience.company}
-          </p>
+          <div className="flex items-center gap-2 mb-1">
+            <p className="text-lg text-text-secondary">
+              {experience.company}
+            </p>
+            {experience.url && (
+              <a
+                href={experience.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors text-sm font-medium"
+              >
+                Visit Site
+              </a>
+            )}
+          </div>
           <p className="text-sm text-text-disabled mb-2">
             {experience.location} • {experience.duration}
           </p>
