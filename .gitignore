@@ -28,9 +28,9 @@ dist/
 Thumbs.db
 
 # Personal images (sensitive content)
-public/homePage.jpg
-public/homepageExperience.png
-public/sdg.jpg
+# public/homePage.jpg - Now included in git for deployment
+# public/homepageExperience.png
+# public/sdg.jpg - Now included in git for deployment
 
 # Personal data files (sensitive content)
 data/experienceData.backup.ts
