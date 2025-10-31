@@ -10,7 +10,7 @@ export default function Navbar() {
       <nav className="container mx-auto px-md py-lg">
         <div className="flex items-center justify-between">
           {/* Logo/Name */}
-            <Link href="/" className="text-4xl font-bold font-sans text-white hover:text-gray-300 transition-standard">
+            <Link href="/" className="text-5xl font-bold font-display text-white hover:text-gray-300 transition-standard">
               Ryan Yiran Li
             </Link>
           
@@ -18,7 +18,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-xl">
             <Link 
               href="/" 
-              className={`text-xl font-bold font-sans px-3 py-sm transition-standard relative ${
+              className={`text-2xl font-bold font-display px-3 py-sm transition-standard relative ${
                 pathname === '/' 
                   ? 'bg-white text-black' 
                   : 'text-white hover:bg-white hover:text-black'
@@ -34,7 +34,7 @@ export default function Navbar() {
             </Link>
             <Link 
               href="/experience" 
-              className={`text-xl font-bold font-sans px-3 py-sm transition-standard relative ${
+              className={`text-2xl font-bold font-display px-3 py-sm transition-standard relative ${
                 pathname === '/experience' 
                   ? 'bg-white text-black' 
                   : 'text-white hover:bg-white hover:text-black'
@@ -50,7 +50,7 @@ export default function Navbar() {
             </Link>
             <Link 
               href="/projects" 
-              className={`text-xl font-bold font-sans px-3 py-sm transition-standard relative ${
+              className={`text-2xl font-bold font-display px-3 py-sm transition-standard relative ${
                 pathname === '/projects' 
                   ? 'bg-white text-black' 
                   : 'text-white hover:bg-white hover:text-black'
@@ -66,7 +66,7 @@ export default function Navbar() {
             </Link>
             <Link 
               href="/education" 
-              className={`text-xl font-bold font-sans px-3 py-sm transition-standard relative ${
+              className={`text-2xl font-bold font-display px-3 py-sm transition-standard relative ${
                 pathname === '/education' 
                   ? 'bg-white text-black' 
                   : 'text-white hover:bg-white hover:text-black'
@@ -82,7 +82,7 @@ export default function Navbar() {
             </Link>
             <Link 
               href="/contact" 
-              className={`text-xl font-bold font-sans px-3 py-sm transition-standard relative ${
+              className={`text-2xl font-bold font-display px-3 py-sm transition-standard relative ${
                 pathname === '/contact' 
                   ? 'bg-white text-black' 
                   : 'text-white hover:bg-white hover:text-black'

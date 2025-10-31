@@ -57,13 +57,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <h3 className="text-xl font-semibold text-text-primary">
                 {project.title}
               </h3>
-              <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                project.type === 'game' 
-                  ? 'bg-green-100 text-green-800' 
-                  : 'bg-blue-100 text-blue-800'
-              }`}>
-                {project.type === 'game' ? 'Playable' : ' Web App'}
-              </span>
+              {project.id !== "1" && (
+                <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                  project.type === 'game' 
+                    ? 'bg-green-100 text-green-800' 
+                    : 'bg-blue-100 text-blue-800'
+                }`}>
+                  {project.type === 'game' ? 'Playable' : ' Web App'}
+                </span>
+              )}
             </div>
             <p className="text-body text-text-secondary mb-4">
               {project.description}
