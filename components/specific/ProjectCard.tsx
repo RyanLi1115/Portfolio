@@ -9,9 +9,23 @@
 
 import { Project } from "@/data/projectsData";
 import Tag from "@/components/ui/Tag";
-import SnakeGame from "@/components/games/SnakeGame";
-import BouncingBallGame from "@/components/games/BouncingBallGame";
-import TetrisGame from "@/components/games/TetrisGame";
+import dynamic from "next/dynamic";
+
+// Dynamically import game components with SSR disabled
+const SnakeGame = dynamic(
+  () => import("@/components/games/SnakeGame"),
+  { ssr: false }
+);
+
+const BouncingBallGame = dynamic(
+  () => import("@/components/games/BouncingBallGame"),
+  { ssr: false }
+);
+
+const TetrisGame = dynamic(
+  () => import("@/components/games/TetrisGame"),
+  { ssr: false }
+);
 
 interface ProjectCardProps {
   project: Project;

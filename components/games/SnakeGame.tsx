@@ -49,11 +49,24 @@ export default function SnakeGame() {
     direction: 'Right',
     gameOver: false,
     score: 0,
-    highScore: parseInt(localStorage.getItem('snakeHighestScore') || '0'),
+    highScore: 0, // Initialize to 0, will be loaded from localStorage in useEffect
     currentDifficulty: 'easy',
     gameSpeed: 150,
     showDifficultyMenu: true
   });
+
+  // Load high score from localStorage only on client side
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedHighScore = localStorage.getItem('snakeHighestScore');
+      if (storedHighScore) {
+        setGameState(prev => ({
+          ...prev,
+          highScore: parseInt(storedHighScore, 10)
+        }));
+      }
+    }
+  }, []);
 
   // 生成食物位置 - 基于原有代码
   const generateFood = useCallback((snake: Position[]) => {
@@ -131,7 +144,9 @@ export default function SnakeGame() {
       if (head.x === prevState.food.x && head.y === prevState.food.y) {
         const newScore = prevState.score + 1;
         const newHighScore = Math.max(newScore, prevState.highScore);
-        localStorage.setItem('snakeHighestScore', newHighScore.toString());
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('snakeHighestScore', newHighScore.toString());
+        }
         
         // 生成新食物
         const newFood = generateFood(newSnake);
